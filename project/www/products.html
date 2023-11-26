@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Products - Sneaker Store</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet"> 
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="Home.html"><img src="sneakerL.png" width="100" height="100" alt="Sneaker Store Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <h1 class="mb-4">Products</h1>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                
+                <div class="card">
+                    <img src="j4s.webp" class="card-img-top" alt="Jordan 4 Retro Military Black">
+                    <div class="card-body">
+                        <h5 class="card-title">Jordan 4 Retro Military Black</h5>
+                        <p class="card-text">200$</p>
+                        <button onclick="addToCart('Jordan 4 Retro Military Black')" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                
+                <div class="card">
+                    <img src="jordan11ss.webp" class="card-img-top" alt="Jordan 11 Cool Greys">
+                    <div class="card-body">
+                        <h5 class="card-title">Jordan 11 Cool Greys</h5>
+                        <p class="card-text">175$</p>
+                        <button onclick="addToCart('Jordan 11 Cool Greys')" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                
+                <div class="card">
+                    <img src="j1sR.jpg" class="card-img-top" alt="Jordan 1 Lost and Found">
+                    <div class="card-body">
+                        <h5 class="card-title">Jordan 1 Lost and Found</h5>
+                        <p class="card-text">250$</p>
+                        <button onclick="addToCart('Jordan 1 Lost and Found')" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="j1sBB.webp" class="card-img-top" alt="Jordan 1 University Blues">
+                    <div class="card-body">
+                        <h5 class="card-title">Jordan 1 University Blues</h5>
+                        <p class="card-text">300$</p>
+                        <button onclick="addToCart('Jordan 1 University Blues')" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="j4sT.jpg" class="card-img-top" alt="Jordan 4 Travis Scotts">
+                    <div class="card-body">
+                        <h5 class="card-title">Jordan 4 Travis Scotts</h5>
+                        <p class="card-text">400$</p>
+                        <button onclick="addToCart('Jordan 4 Travis Scotts')" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="panda.webp" class="card-img-top" alt="Dunks Low Black and White">
+                    <div class="card-body">
+                        <h5 class="card-title">Dunks Low Black and White</h5>
+                        <p class="card-text">230$</p>
+                        <button onclick="addToCart('Dunks Low Black and White')" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="airforceW.webp" class="card-img-top" alt="Placeholder Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Airforce White</h5>
+                        <p class="card-text">150$</p>
+                        <button onclick="addToCart('Airforce White')" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="airforceB.webp" class="card-img-top" alt="Placeholder Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Airforce Black</h5>
+                        <p class="card-text">150$</p>
+                        <button onclick="addToCart('Airforce Black')" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="airforceT.webp" class="card-img-top" alt="Placeholder Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Airforce Travis Scott</h5>
+                        <p class="card-text">410$</p>
+                        <button onclick="addToCart('Airforce Travis Scott')" class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+        
+    </main>
+    <footer class="bg-light py-4">
+        <div class="container text-center">
+            <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                    <a href="#"><img src="insta.jpg" height="30" width="30" alt="Instagram"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#"><img src="snap.jpg" height="30" width="30" alt="Snapchat"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#"><img src="whatsapp.webp" height="30" width="30" alt="WhatsApp"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
